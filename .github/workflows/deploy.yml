@@ -22,9 +22,9 @@ jobs:
               with:
                   node-version: 16
             - name: Install dependencies
-              run: pnpm ci
+              run: npm install
             - name: Build App
-              run: pnpm run build
+              run: npm run build
             - name: Deploy to GitHub Pages
               uses: peaceiris/actions-gh-pages@v3
               with:
